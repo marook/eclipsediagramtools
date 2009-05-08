@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <?metadataRepository class='org.eclipse.equinox.internal.p2.metadata.repository.LocalMetadataRepository' version='1.0.0'?>
-<repository name='Eclipse Diagram Tools - Google Code Update Site' type='org.eclipse.equinox.internal.p2.metadata.repository.LocalMetadataRepository' version='1'>
+<repository name='Eclipse Diagram Tools - Google Code Update Site' type='org.eclipse.equinox.internal.p2.metadata.repository.LocalMetadataRepository' version='1.0.0'>
   <properties size='2'>
     <property name='p2.compressed' value='false'/>
-    <property name='p2.timestamp' value='1241769388553'/>
+    <property name='p2.timestamp' value='1241772790999'/>
   </properties>
-  <units size='11'>
+  <units size='13'>
     <unit id='tooling.source.default' version='1.0.0' singleton='false'>
       <hostRequirements size='1'>
         <required namespace='org.eclipse.equinox.p2.eclipse.type' name='source' range='0.0.0' optional='true' multiple='true' greedy='false'/>
@@ -60,7 +60,7 @@
       <touchpointData size='1'>
         <instructions size='1'>
           <instruction key='manifest'>
-            Bundle-ManifestVersion: 2&#xA;Export-Package: arch,arch.impl,arch.util&#xA;Bundle-RequiredExecutionEnvironment: JavaSE-1.6&#xA;Bundle-Localization: plugin&#xA;Require-Bundle: org.eclipse.core.runtime,org.eclipse.emf.ecore;visibility:=reexport&#xA;Bundle-Name: %pluginName&#xA;Bundle-Version: 1.0.0&#xA;Bundle-Vendor: %providerName&#xA;Bundle-SymbolicName: edt.arch.model;singleton:=true&#xA;Bundle-ActivationPolicy: lazy&#xA;Bundle-ClassPath: .&#xA;Manifest-Version: 1.0&#xA;
+            Bundle-ManifestVersion: 2&#xA;Export-Package: arch,arch.impl,arch.util&#xA;Bundle-RequiredExecutionEnvironment: JavaSE-1.6&#xA;Bundle-Localization: plugin&#xA;Require-Bundle: org.eclipse.core.runtime,org.eclipse.emf.ecore;visibility:=reexport&#xA;Bundle-Name: %pluginName&#xA;Bundle-Version: 1.0.0&#xA;Bundle-Vendor: %providerName&#xA;Bundle-SymbolicName: edt.arch.model;singleton:=true&#xA;Bundle-ActivationPolicy: lazy&#xA;Bundle-ClassPath: .&#xA;Manifest-Version: 1.0
           </instruction>
         </instructions>
       </touchpointData>
@@ -106,7 +106,7 @@
       <touchpointData size='1'>
         <instructions size='1'>
           <instruction key='manifest'>
-            Bundle-RequiredExecutionEnvironment: JavaSE-1.6&#xA;Bundle-Name: %pluginName&#xA;Bundle-Activator: arch.provider.ArchEditPlugin$Implementation&#xA;Manifest-Version: 1.0&#xA;Bundle-Vendor: %providerName&#xA;Bundle-ClassPath: .&#xA;Bundle-ActivationPolicy: lazy&#xA;Bundle-SymbolicName: edt.arch.model.edit;singleton:=true&#xA;Bundle-ManifestVersion: 2&#xA;Bundle-Version: 1.0.0&#xA;Bundle-Localization: plugin&#xA;Export-Package: arch.provider&#xA;Require-Bundle: org.eclipse.core.runtime,edt.arch.model;visibility:=reexport,org.eclipse.emf.edit;visibility:=reexport&#xA;
+            Bundle-RequiredExecutionEnvironment: JavaSE-1.6&#xA;Bundle-Name: %pluginName&#xA;Bundle-Activator: arch.provider.ArchEditPlugin$Implementation&#xA;Manifest-Version: 1.0&#xA;Bundle-Vendor: %providerName&#xA;Bundle-ClassPath: .&#xA;Bundle-ActivationPolicy: lazy&#xA;Bundle-SymbolicName: edt.arch.model.edit;singleton:=true&#xA;Bundle-ManifestVersion: 2&#xA;Bundle-Version: 1.0.0&#xA;Bundle-Localization: plugin&#xA;Export-Package: arch.provider&#xA;Require-Bundle: org.eclipse.core.runtime,edt.arch.model;visibility:=reexport,org.eclipse.emf.edit;visibility:=reexport
           </instruction>
         </instructions>
       </touchpointData>
@@ -259,7 +259,7 @@
       <touchpointData size='1'>
         <instructions size='1'>
           <instruction key='manifest'>
-            Bundle-ManifestVersion: 2&#xA;Export-Package: arch.diagram.edit.parts,arch.diagram.part,arch.diagram.providers&#xA;Bundle-Localization: plugin&#xA;Require-Bundle: org.eclipse.core.runtime,org.eclipse.core.resources,org.eclipse.core.expressions,org.eclipse.jface,org.eclipse.ui.ide,org.eclipse.ui.views,org.eclipse.ui.navigator,org.eclipse.ui.navigator.resources,org.eclipse.emf.ecore,org.eclipse.emf.ecore.xmi,org.eclipse.emf.edit.ui,org.eclipse.gmf.runtime.emf.core,org.eclipse.gmf.runtime.emf.commands.core,org.eclipse.gmf.runtime.emf.ui.properties,org.eclipse.gmf.runtime.diagram.ui,org.eclipse.gmf.runtime.diagram.ui.properties,org.eclipse.gmf.runtime.diagram.ui.providers,org.eclipse.gmf.runtime.diagram.ui.providers.ide,org.eclipse.gmf.runtime.diagram.ui.render,org.eclipse.gmf.runtime.diagram.ui.resources.editor,org.eclipse.gmf.runtime.diagram.ui.resources.editor.ide,edt.arch.model;visibility:=reexport,edt.arch.model.edit;visibility:=reexport,org.eclipse.gmf.runtime.draw2d.ui;visibility:=reexport,org.eclipse.gef;visibility:=reexport&#xA;Bundle-Activator: arch.diagram.part.ArchDiagramEditorPlugin&#xA;Bundle-Name: %pluginName&#xA;Bundle-Version: 1.0.0.200905080756&#xA;Bundle-Vendor: %providerName&#xA;Bundle-SymbolicName: edt.arch.diagram; singleton:=true&#xA;Bundle-ClassPath: .&#xA;Manifest-Version: 1.0&#xA;Eclipse-LazyStart: true&#xA;
+            Bundle-ManifestVersion: 2&#xA;Export-Package: arch.diagram.edit.parts,arch.diagram.part,arch.diagram.providers&#xA;Bundle-Localization: plugin&#xA;Require-Bundle: org.eclipse.core.runtime,org.eclipse.core.resources,org.eclipse.core.expressions,org.eclipse.jface,org.eclipse.ui.ide,org.eclipse.ui.views,org.eclipse.ui.navigator,org.eclipse.ui.navigator.resources,org.eclipse.emf.ecore,org.eclipse.emf.ecore.xmi,org.eclipse.emf.edit.ui,org.eclipse.gmf.runtime.emf.core,org.eclipse.gmf.runtime.emf.commands.core,org.eclipse.gmf.runtime.emf.ui.properties,org.eclipse.gmf.runtime.diagram.ui,org.eclipse.gmf.runtime.diagram.ui.properties,org.eclipse.gmf.runtime.diagram.ui.providers,org.eclipse.gmf.runtime.diagram.ui.providers.ide,org.eclipse.gmf.runtime.diagram.ui.render,org.eclipse.gmf.runtime.diagram.ui.resources.editor,org.eclipse.gmf.runtime.diagram.ui.resources.editor.ide,edt.arch.model;visibility:=reexport,edt.arch.model.edit;visibility:=reexport,org.eclipse.gmf.runtime.draw2d.ui;visibility:=reexport,org.eclipse.gef;visibility:=reexport&#xA;Bundle-Activator: arch.diagram.part.ArchDiagramEditorPlugin&#xA;Bundle-Name: %pluginName&#xA;Bundle-Version: 1.0.0.200905080756&#xA;Bundle-Vendor: %providerName&#xA;Bundle-SymbolicName: edt.arch.diagram; singleton:=true&#xA;Bundle-ClassPath: .&#xA;Manifest-Version: 1.0&#xA;Eclipse-LazyStart: true
           </instruction>
         </instructions>
       </touchpointData>
@@ -439,6 +439,97 @@
       <copyright url='http://www.example.com/copyright'>
         [Enter Copyright Description here.]
       </copyright>
+    </unit>
+    <unit id='edt.arch.diagram' version='1.0.0.200905080853'>
+      <update id='edt.arch.diagram' range='[0.0.0,1.0.0.200905080853)' severity='0'/>
+      <properties size='4'>
+        <property name='df_LT.providerName' value='Sample Plugin Provider, Inc'/>
+        <property name='df_LT.pluginName' value='Arch Plugin'/>
+        <property name='org.eclipse.equinox.p2.name' value='%pluginName'/>
+        <property name='org.eclipse.equinox.p2.provider' value='%providerName'/>
+      </properties>
+      <provides size='7'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='edt.arch.diagram' version='1.0.0.200905080853'/>
+        <provided namespace='osgi.bundle' name='edt.arch.diagram' version='1.0.0.200905080853'/>
+        <provided namespace='java.package' name='arch.diagram.edit.parts' version='0.0.0'/>
+        <provided namespace='java.package' name='arch.diagram.part' version='0.0.0'/>
+        <provided namespace='java.package' name='arch.diagram.providers' version='0.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.localization' name='df_LT' version='1.0.0'/>
+      </provides>
+      <requires size='25'>
+        <required namespace='osgi.bundle' name='org.eclipse.core.runtime' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.core.resources' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.core.expressions' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.jface' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ui.ide' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ui.views' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ui.navigator' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ui.navigator.resources' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.emf.ecore' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.emf.ecore.xmi' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.emf.edit.ui' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.gmf.runtime.emf.core' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.gmf.runtime.emf.commands.core' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.gmf.runtime.emf.ui.properties' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.gmf.runtime.diagram.ui' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.gmf.runtime.diagram.ui.properties' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.gmf.runtime.diagram.ui.providers' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.gmf.runtime.diagram.ui.providers.ide' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.gmf.runtime.diagram.ui.render' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.gmf.runtime.diagram.ui.resources.editor' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.gmf.runtime.diagram.ui.resources.editor.ide' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='edt.arch.model' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='edt.arch.model.edit' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.gmf.runtime.draw2d.ui' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.gef' range='0.0.0'/>
+      </requires>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='edt.arch.diagram' version='1.0.0.200905080853'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-ManifestVersion: 2&#xA;Export-Package: arch.diagram.edit.parts,arch.diagram.part,arch.diagram.providers&#xA;Bundle-Localization: plugin&#xA;Require-Bundle: org.eclipse.core.runtime,org.eclipse.core.resources,org.eclipse.core.expressions,org.eclipse.jface,org.eclipse.ui.ide,org.eclipse.ui.views,org.eclipse.ui.navigator,org.eclipse.ui.navigator.resources,org.eclipse.emf.ecore,org.eclipse.emf.ecore.xmi,org.eclipse.emf.edit.ui,org.eclipse.gmf.runtime.emf.core,org.eclipse.gmf.runtime.emf.commands.core,org.eclipse.gmf.runtime.emf.ui.properties,org.eclipse.gmf.runtime.diagram.ui,org.eclipse.gmf.runtime.diagram.ui.properties,org.eclipse.gmf.runtime.diagram.ui.providers,org.eclipse.gmf.runtime.diagram.ui.providers.ide,org.eclipse.gmf.runtime.diagram.ui.render,org.eclipse.gmf.runtime.diagram.ui.resources.editor,org.eclipse.gmf.runtime.diagram.ui.resources.editor.ide,edt.arch.model;visibility:=reexport,edt.arch.model.edit;visibility:=reexport,org.eclipse.gmf.runtime.draw2d.ui;visibility:=reexport,org.eclipse.gef;visibility:=reexport&#xA;Bundle-Activator: arch.diagram.part.ArchDiagramEditorPlugin&#xA;Bundle-Name: %pluginName&#xA;Bundle-Version: 1.0.0.200905080853&#xA;Bundle-Vendor: %providerName&#xA;Bundle-SymbolicName: edt.arch.diagram; singleton:=true&#xA;Bundle-ClassPath: .&#xA;Manifest-Version: 1.0&#xA;Eclipse-LazyStart: true&#xA;
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='edt.arch.model.editor' version='1.0.0'>
+      <update id='edt.arch.model.editor' range='[0.0.0,1.0.0)' severity='0'/>
+      <properties size='4'>
+        <property name='df_LT.providerName' value='www.example.org'/>
+        <property name='df_LT.pluginName' value='Arch Editor'/>
+        <property name='org.eclipse.equinox.p2.name' value='%pluginName'/>
+        <property name='org.eclipse.equinox.p2.provider' value='%providerName'/>
+      </properties>
+      <provides size='5'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='edt.arch.model.editor' version='1.0.0'/>
+        <provided namespace='osgi.bundle' name='edt.arch.model.editor' version='1.0.0'/>
+        <provided namespace='java.package' name='arch.presentation' version='0.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.localization' name='df_LT' version='1.0.0'/>
+      </provides>
+      <requires size='6'>
+        <required namespace='osgi.bundle' name='org.eclipse.core.runtime' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.core.resources' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='edt.arch.model.edit' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.emf.ecore.xmi' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.emf.edit.ui' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ui.ide' range='0.0.0'/>
+      </requires>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='edt.arch.model.editor' version='1.0.0'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-RequiredExecutionEnvironment: JavaSE-1.6&#xA;Bundle-Name: %pluginName&#xA;Bundle-Activator: arch.presentation.ArchEditorPlugin$Implementation&#xA;Manifest-Version: 1.0&#xA;Bundle-Vendor: %providerName&#xA;Bundle-ClassPath: .&#xA;Bundle-ActivationPolicy: lazy&#xA;Bundle-SymbolicName: edt.arch.model.editor;singleton:=true&#xA;Bundle-ManifestVersion: 2&#xA;Bundle-Version: 1.0.0&#xA;Bundle-Localization: plugin&#xA;Export-Package: arch.presentation&#xA;Require-Bundle: org.eclipse.core.runtime,org.eclipse.core.resources;visibility:=reexport,edt.arch.model.edit;visibility:=reexport,org.eclipse.emf.ecore.xmi;visibility:=reexport,org.eclipse.emf.edit.ui;visibility:=reexport,org.eclipse.ui.ide;visibility:=reexport&#xA;
+          </instruction>
+        </instructions>
+      </touchpointData>
     </unit>
   </units>
 </repository>
