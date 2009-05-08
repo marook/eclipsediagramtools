@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/edt.arch.metamodel/src"
+    editDirectory="/edt.arch.edit/src" editorDirectory="/edt.arch.editor/src" modelPluginID="edt.arch.model"
+    modelName="Arch" testsDirectory="/edt.arch.tests/src" importerID="org.eclipse.emf.importer.ecore"
+    complianceLevel="6.0" copyrightFields="false">
+  <foreignModel>arch.ecore</foreignModel>
+  <genPackages prefix="Arch" disposableProviderFactory="true" ecorePackage="arch.ecore#/">
+    <genClasses image="false" ecoreClass="arch.ecore#//NamedElement">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute arch.ecore#//NamedElement/name"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="arch.ecore#//NodeContainer">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference arch.ecore#//NodeContainer/children"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="arch.ecore#//Node"/>
+    <genClasses ecoreClass="arch.ecore#//Diagram">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference arch.ecore#//Diagram/edges"/>
+    </genClasses>
+    <genClasses ecoreClass="arch.ecore#//Network"/>
+    <genClasses ecoreClass="arch.ecore#//ServerCluster"/>
+    <genClasses ecoreClass="arch.ecore#//ServerHost"/>
+    <genClasses ecoreClass="arch.ecore#//JavaVirtualMachine"/>
+    <genClasses ecoreClass="arch.ecore#//SoftwareComponent"/>
+    <genClasses image="false" ecoreClass="arch.ecore#//Edge"/>
+    <genClasses ecoreClass="arch.ecore#//Dependency">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference arch.ecore#//Dependency/source"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference arch.ecore#//Dependency/target"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>
