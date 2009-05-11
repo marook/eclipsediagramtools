@@ -10,6 +10,15 @@
         title="arch">
       <tools
           xsi:type="gmftool:CreationTool"
+          title="Text"
+          description="Create new Text">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
           title="Network"
           description="Create new Network">
         <smallIcon
@@ -37,6 +46,15 @@
       </tools>
       <tools
           xsi:type="gmftool:CreationTool"
+          title="ClientHost"
+          description="Create new ClientHost">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
           title="JavaVirtualMachine"
           description="Create new JavaVirtualMachine">
         <smallIcon
@@ -55,8 +73,26 @@
       </tools>
       <tools
           xsi:type="gmftool:CreationTool"
+          title="Database"
+          description="Create new Database">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
           title="Dependency"
           description="Create new Dependency">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Relation"
+          description="Create new Relation">
         <smallIcon
             xsi:type="gmftool:DefaultImage"/>
         <largeIcon

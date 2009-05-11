@@ -10,6 +10,27 @@
         href="arch.ecore#//NodeContainer/children"/>
     <ownedChild>
       <domainMetaElement
+          href="arch.ecore#//Text"/>
+      <labelMappings
+          xsi:type="gmfmap:FeatureLabelMapping"
+          editorPattern="">
+        <diagramLabel
+            href="arch.gmfgraph#TextName"/>
+        <features
+            href="arch.ecore#//NamedElement/name"/>
+      </labelMappings>
+      <tool
+          xsi:type="gmftool:CreationTool"
+          href="arch.gmftool#//@palette/@tools.0/@tools.0"/>
+      <diagramNode
+          href="arch.gmfgraph#Text"/>
+    </ownedChild>
+  </nodes>
+  <nodes>
+    <containmentFeature
+        href="arch.ecore#//NodeContainer/children"/>
+    <ownedChild>
+      <domainMetaElement
           href="arch.ecore#//Network"/>
       <labelMappings
           xsi:type="gmfmap:FeatureLabelMapping">
@@ -20,7 +41,7 @@
       </labelMappings>
       <tool
           xsi:type="gmftool:CreationTool"
-          href="arch.gmftool#//@palette/@tools.0/@tools.0"/>
+          href="arch.gmftool#//@palette/@tools.0/@tools.1"/>
       <diagramNode
           href="arch.gmfgraph#Network"/>
     </ownedChild>
@@ -40,9 +61,29 @@
       </labelMappings>
       <tool
           xsi:type="gmftool:CreationTool"
-          href="arch.gmftool#//@palette/@tools.0/@tools.2"/>
+          href="arch.gmftool#//@palette/@tools.0/@tools.3"/>
       <diagramNode
           href="arch.gmfgraph#ServerHost"/>
+    </ownedChild>
+  </nodes>
+  <nodes>
+    <containmentFeature
+        href="arch.ecore#//NodeContainer/children"/>
+    <ownedChild>
+      <domainMetaElement
+          href="arch.ecore#//ClientHost"/>
+      <labelMappings
+          xsi:type="gmfmap:FeatureLabelMapping">
+        <diagramLabel
+            href="arch.gmfgraph#ClientHostName"/>
+        <features
+            href="arch.ecore#//NamedElement/name"/>
+      </labelMappings>
+      <tool
+          xsi:type="gmftool:CreationTool"
+          href="arch.gmftool#//@palette/@tools.0/@tools.4"/>
+      <diagramNode
+          href="arch.gmfgraph#ClientHost"/>
     </ownedChild>
   </nodes>
   <nodes>
@@ -60,7 +101,7 @@
       </labelMappings>
       <tool
           xsi:type="gmftool:CreationTool"
-          href="arch.gmftool#//@palette/@tools.0/@tools.1"/>
+          href="arch.gmftool#//@palette/@tools.0/@tools.2"/>
       <diagramNode
           href="arch.gmfgraph#ServerCluster"/>
     </ownedChild>
@@ -80,7 +121,7 @@
       </labelMappings>
       <tool
           xsi:type="gmftool:CreationTool"
-          href="arch.gmftool#//@palette/@tools.0/@tools.3"/>
+          href="arch.gmftool#//@palette/@tools.0/@tools.5"/>
       <diagramNode
           href="arch.gmfgraph#JavaVirtualMachine"/>
     </ownedChild>
@@ -100,9 +141,29 @@
       </labelMappings>
       <tool
           xsi:type="gmftool:CreationTool"
-          href="arch.gmftool#//@palette/@tools.0/@tools.4"/>
+          href="arch.gmftool#//@palette/@tools.0/@tools.6"/>
       <diagramNode
           href="arch.gmfgraph#SoftwareComponent"/>
+    </ownedChild>
+  </nodes>
+  <nodes>
+    <containmentFeature
+        href="arch.ecore#//NodeContainer/children"/>
+    <ownedChild>
+      <domainMetaElement
+          href="arch.ecore#//Database"/>
+      <labelMappings
+          xsi:type="gmfmap:FeatureLabelMapping">
+        <diagramLabel
+            href="arch.gmfgraph#DatabaseName"/>
+        <features
+            href="arch.ecore#//NamedElement/name"/>
+      </labelMappings>
+      <tool
+          xsi:type="gmftool:CreationTool"
+          href="arch.gmftool#//@palette/@tools.0/@tools.7"/>
+      <diagramNode
+          href="arch.gmfgraph#Database"/>
     </ownedChild>
   </nodes>
   <links>
@@ -117,17 +178,38 @@
     </labelMappings>
     <containmentFeature
         href="arch.ecore#//Diagram/edges"/>
-    <tool
-        xsi:type="gmftool:CreationTool"
-        href="arch.gmftool#//@palette/@tools.0/@tools.5"/>
     <diagramLink
         href="arch.gmfgraph#Dependency"/>
     <sourceMetaFeature
         xsi:type="ecore:EReference"
-        href="arch.ecore#//Dependency/source"/>
+        href="arch.ecore#//Edge/source"/>
     <linkMetaFeature
         xsi:type="ecore:EReference"
-        href="arch.ecore#//Dependency/target"/>
+        href="arch.ecore#//Edge/target"/>
+  </links>
+  <links>
+    <domainMetaElement
+        href="arch.ecore#//Relation"/>
+    <labelMappings
+        xsi:type="gmfmap:FeatureLabelMapping">
+      <diagramLabel
+          href="arch.gmfgraph#RelationName"/>
+      <features
+          href="arch.ecore#//NamedElement/name"/>
+    </labelMappings>
+    <containmentFeature
+        href="arch.ecore#//Diagram/edges"/>
+    <tool
+        xsi:type="gmftool:CreationTool"
+        href="arch.gmftool#//@palette/@tools.0/@tools.8"/>
+    <diagramLink
+        href="arch.gmfgraph#Relation"/>
+    <sourceMetaFeature
+        xsi:type="ecore:EReference"
+        href="arch.ecore#//Edge/source"/>
+    <linkMetaFeature
+        xsi:type="ecore:EReference"
+        href="arch.ecore#//Edge/target"/>
   </links>
   <diagram>
     <diagramCanvas

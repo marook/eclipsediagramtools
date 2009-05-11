@@ -5,6 +5,7 @@
     nsURI="http://www.bughome.de/model/edt/arch" nsPrefix="arch">
   <eClassifiers xsi:type="ecore:EClass" name="NamedElement" abstract="true">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="comment" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="NodeContainer" abstract="true" eSuperTypes="#//NamedElement">
     <eStructuralFeatures xsi:type="ecore:EReference" name="children" upperBound="-1"
@@ -15,16 +16,20 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="edges" upperBound="-1"
         eType="#//Edge" containment="true"/>
   </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Text" eSuperTypes="#//Node"/>
   <eClassifiers xsi:type="ecore:EClass" name="Network" eSuperTypes="#//Node"/>
   <eClassifiers xsi:type="ecore:EClass" name="ServerCluster" eSuperTypes="#//Node"/>
   <eClassifiers xsi:type="ecore:EClass" name="ServerHost" eSuperTypes="#//Node"/>
+  <eClassifiers xsi:type="ecore:EClass" name="ClientHost" eSuperTypes="#//Node"/>
   <eClassifiers xsi:type="ecore:EClass" name="JavaVirtualMachine" eSuperTypes="#//Node"/>
   <eClassifiers xsi:type="ecore:EClass" name="SoftwareComponent" eSuperTypes="#//Node"/>
-  <eClassifiers xsi:type="ecore:EClass" name="Edge" abstract="true" eSuperTypes="#//NamedElement"/>
-  <eClassifiers xsi:type="ecore:EClass" name="Dependency" eSuperTypes="#//Edge">
+  <eClassifiers xsi:type="ecore:EClass" name="Database" eSuperTypes="#//Node"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Edge" abstract="true" eSuperTypes="#//NamedElement">
     <eStructuralFeatures xsi:type="ecore:EReference" name="source" lowerBound="1"
         eType="#//Node"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="target" lowerBound="1"
         eType="#//Node"/>
   </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Dependency" eSuperTypes="#//Edge"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Relation" eSuperTypes="#//Edge"/>
 </ecore:EPackage>
