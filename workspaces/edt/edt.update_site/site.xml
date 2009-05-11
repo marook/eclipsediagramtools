@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
-   <feature url="features/de.bughome.edt.arch.feature_1.0.0.jar" id="de.bughome.edt.arch.feature" version="1.0.0">
+   <feature url="features/de.bughome.edt.arch.feature_1.1.0.jar" id="de.bughome.edt.arch.feature" version="1.1.0">
       <category name="de.bughome.edt"/>
    </feature>
    <category-def name="de.bughome.edt" label="Eclipse Diagram Tools">
