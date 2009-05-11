@@ -6,6 +6,29 @@
   <figures
       name="Default">
     <descriptors
+        name="TextFigure">
+      <actualFigure
+          xsi:type="gmfgraph:Rectangle"
+          name="TextFigure"
+          outline="false"
+          fill="false">
+        <layout
+            xsi:type="gmfgraph:FlowLayout"/>
+        <preferredSize/>
+        <insets
+            top="5"
+            left="5"
+            bottom="5"
+            right="5"/>
+        <children
+            xsi:type="gmfgraph:Label"
+            name="TextNameFigure"
+            text="&lt;...>"/>
+      </actualFigure>
+      <accessors
+          figure="//@figures.0/@descriptors.0/@actualFigure/@children.0"/>
+    </descriptors>
+    <descriptors
         name="NetworkFigure">
       <actualFigure
           xsi:type="gmfgraph:RoundedRectangle">
@@ -22,7 +45,7 @@
             text="&lt;...>"/>
       </actualFigure>
       <accessors
-          figure="//@figures.0/@descriptors.0/@actualFigure/@children.0"/>
+          figure="//@figures.0/@descriptors.1/@actualFigure/@children.0"/>
     </descriptors>
     <descriptors
         name="ServerClusterFigure">
@@ -42,7 +65,7 @@
             text="&lt;...>"/>
       </actualFigure>
       <accessors
-          figure="//@figures.0/@descriptors.1/@actualFigure/@children.0"/>
+          figure="//@figures.0/@descriptors.2/@actualFigure/@children.0"/>
     </descriptors>
     <descriptors
         name="ServerHostFigure">
@@ -62,7 +85,27 @@
             text="&lt;...>"/>
       </actualFigure>
       <accessors
-          figure="//@figures.0/@descriptors.2/@actualFigure/@children.0"/>
+          figure="//@figures.0/@descriptors.3/@actualFigure/@children.0"/>
+    </descriptors>
+    <descriptors
+        name="ClientHostFigure">
+      <actualFigure
+          xsi:type="gmfgraph:RoundedRectangle"
+          name="ClientHostFigure">
+        <layout
+            xsi:type="gmfgraph:FlowLayout"/>
+        <insets
+            top="5"
+            left="5"
+            bottom="5"
+            right="5"/>
+        <children
+            xsi:type="gmfgraph:Label"
+            name="ClientHostNameFigure"
+            text="&lt;...>"/>
+      </actualFigure>
+      <accessors
+          figure="//@figures.0/@descriptors.4/@actualFigure/@children.0"/>
     </descriptors>
     <descriptors
         name="JavaVirtualMachineFigure">
@@ -82,7 +125,7 @@
             text="&lt;...>"/>
       </actualFigure>
       <accessors
-          figure="//@figures.0/@descriptors.3/@actualFigure/@children.0"/>
+          figure="//@figures.0/@descriptors.5/@actualFigure/@children.0"/>
     </descriptors>
     <descriptors
         name="SoftwareComponentFigure">
@@ -102,7 +145,27 @@
             text="&lt;...>"/>
       </actualFigure>
       <accessors
-          figure="//@figures.0/@descriptors.4/@actualFigure/@children.0"/>
+          figure="//@figures.0/@descriptors.6/@actualFigure/@children.0"/>
+    </descriptors>
+    <descriptors
+        name="DatabaseFigure">
+      <actualFigure
+          xsi:type="gmfgraph:Ellipse"
+          name="DatabaseFigure">
+        <layout
+            xsi:type="gmfgraph:FlowLayout"/>
+        <insets
+            top="5"
+            left="5"
+            bottom="5"
+            right="5"/>
+        <children
+            xsi:type="gmfgraph:Label"
+            name="DatabaseNameFigure"
+            text="&lt;...>"/>
+      </actualFigure>
+      <accessors
+          figure="//@figures.0/@descriptors.7/@actualFigure/@children.0"/>
     </descriptors>
     <descriptors
         name="DependencyFigure">
@@ -111,11 +174,14 @@
           name="DependencyFigure"
           lineWidth="2"
           lineKind="LINE_DASH"
-          targetDecoration="//@figures.0/@descriptors.5/@actualFigure/@children.1">
+          targetDecoration="//@figures.0/@descriptors.8/@actualFigure/@children.1">
+        <foregroundColor
+            xsi:type="gmfgraph:ConstantColor"
+            value="darkGray"/>
         <children
             xsi:type="gmfgraph:Label"
             name="DependencyNameFigure"
-            text="&lt;...>"/>
+            text=""/>
         <children
             xsi:type="gmfgraph:PolylineDecoration"
             name="DependencyArrowFigure"
@@ -130,9 +196,42 @@
         </children>
       </actualFigure>
       <accessors
-          figure="//@figures.0/@descriptors.5/@actualFigure/@children.0"/>
+          figure="//@figures.0/@descriptors.8/@actualFigure/@children.0"/>
+    </descriptors>
+    <descriptors
+        name="RelationFigure">
+      <actualFigure
+          xsi:type="gmfgraph:PolylineConnection"
+          name="RelationFigure"
+          lineWidth="2"
+          targetDecoration="//@figures.0/@descriptors.9/@actualFigure/@children.1">
+        <foregroundColor
+            xsi:type="gmfgraph:ConstantColor"
+            value="darkGray"/>
+        <children
+            xsi:type="gmfgraph:Label"
+            name="RelationNameFigure"
+            text=""/>
+        <children
+            xsi:type="gmfgraph:PolylineDecoration"
+            name="RelationArrowFigure"
+            lineWidth="2">
+          <template
+              x="-1"
+              y="2"/>
+          <template/>
+          <template
+              x="-1"
+              y="-2"/>
+        </children>
+      </actualFigure>
+      <accessors
+          figure="//@figures.0/@descriptors.9/@actualFigure/@children.0"/>
     </descriptors>
   </figures>
+  <nodes
+      name="Text"
+      figure="TextFigure"/>
   <nodes
       name="Network"
       figure="NetworkFigure"/>
@@ -143,36 +242,64 @@
       name="ServerHost"
       figure="ServerHostFigure"/>
   <nodes
+      name="ClientHost"
+      figure="ClientHostFigure"/>
+  <nodes
       name="JavaVirtualMachine"
       figure="JavaVirtualMachineFigure"/>
   <nodes
       name="SoftwareComponent"
       figure="SoftwareComponentFigure"/>
+  <nodes
+      name="Database"
+      figure="DatabaseFigure"/>
   <connections
       name="Dependency"
       figure="DependencyFigure"/>
+  <connections
+      name="Relation"
+      figure="RelationFigure"/>
+  <labels
+      name="TextName"
+      figure="TextFigure"
+      elementIcon="false"
+      accessor="//@figures.0/@descriptors.0/@accessors.0"/>
   <labels
       name="NetworkName"
       figure="NetworkFigure"
-      accessor="//@figures.0/@descriptors.0/@accessors.0"/>
+      accessor="//@figures.0/@descriptors.1/@accessors.0"/>
   <labels
       name="ServerClusterName"
       figure="ServerClusterFigure"
-      accessor="//@figures.0/@descriptors.1/@accessors.0"/>
+      accessor="//@figures.0/@descriptors.2/@accessors.0"/>
   <labels
       name="ServerHostName"
       figure="ServerHostFigure"
-      accessor="//@figures.0/@descriptors.2/@accessors.0"/>
+      accessor="//@figures.0/@descriptors.3/@accessors.0"/>
+  <labels
+      name="ClientHostName"
+      figure="ClientHostFigure"
+      accessor="//@figures.0/@descriptors.4/@accessors.0"/>
   <labels
       name="JavaVirtualMachineName"
       figure="JavaVirtualMachineFigure"
-      accessor="//@figures.0/@descriptors.3/@accessors.0"/>
+      accessor="//@figures.0/@descriptors.5/@accessors.0"/>
   <labels
       name="SoftwareComponentName"
       figure="SoftwareComponentFigure"
-      accessor="//@figures.0/@descriptors.4/@accessors.0"/>
+      accessor="//@figures.0/@descriptors.6/@accessors.0"/>
+  <labels
+      name="DatabaseName"
+      figure="DatabaseFigure"
+      accessor="//@figures.0/@descriptors.7/@accessors.0"/>
   <labels
       name="DependencyName"
       figure="DependencyFigure"
-      accessor="//@figures.0/@descriptors.5/@accessors.0"/>
+      elementIcon="false"
+      accessor="//@figures.0/@descriptors.8/@accessors.0"/>
+  <labels
+      name="RelationName"
+      figure="RelationFigure"
+      elementIcon="false"
+      accessor="//@figures.0/@descriptors.9/@accessors.0"/>
 </gmfgraph:Canvas>
