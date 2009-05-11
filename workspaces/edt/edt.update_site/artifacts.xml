@@ -1,41 +1,20 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <?artifactRepository class='org.eclipse.equinox.internal.p2.artifact.repository.simple.SimpleArtifactRepository' version='1.0.0'?>
-<repository name='Eclipse Diagram Tools - Google Code Update Site' type='org.eclipse.equinox.p2.artifact.repository.simpleRepository' version='1'>
+<repository name='file:/home/marook/work/devel/eclipse diagram tools/workspaces/edt/edt.update_site/ - artifacts' type='org.eclipse.equinox.p2.artifact.repository.simpleRepository' version='1'>
   <properties size='2'>
     <property name='p2.compressed' value='false'/>
-    <property name='p2.timestamp' value='1242045657078'/>
+    <property name='p2.timestamp' value='1242046275589'/>
   </properties>
   <mappings size='3'>
     <rule filter='(&amp; (classifier=osgi.bundle))' output='${repoUrl}/plugins/${id}_${version}.jar'/>
     <rule filter='(&amp; (classifier=binary))' output='${repoUrl}/binary/${id}_${version}'/>
     <rule filter='(&amp; (classifier=org.eclipse.update.feature))' output='${repoUrl}/features/${id}_${version}.jar'/>
   </mappings>
-  <artifacts size='10'>
+  <artifacts size='5'>
     <artifact classifier='osgi.bundle' id='de.bughome.edt.arch.model.editor' version='1.1.0'>
       <properties size='3'>
         <property name='artifact.size' value='61773'/>
         <property name='download.size' value='61773'/>
-        <property name='download.contentType' value='application/zip'/>
-      </properties>
-    </artifact>
-    <artifact classifier='osgi.bundle' id='edt.arch.diagram' version='1.0.0'>
-      <properties size='3'>
-        <property name='artifact.size' value='301128'/>
-        <property name='download.size' value='301128'/>
-        <property name='download.contentType' value='application/zip'/>
-      </properties>
-    </artifact>
-    <artifact classifier='osgi.bundle' id='edt.arch.model.edit' version='1.0.0'>
-      <properties size='3'>
-        <property name='artifact.size' value='27552'/>
-        <property name='download.size' value='27552'/>
-        <property name='download.contentType' value='application/zip'/>
-      </properties>
-    </artifact>
-    <artifact classifier='osgi.bundle' id='edt.arch.model' version='1.0.0'>
-      <properties size='3'>
-        <property name='artifact.size' value='25535'/>
-        <property name='download.size' value='25535'/>
         <property name='download.contentType' value='application/zip'/>
       </properties>
     </artifact>
@@ -61,22 +40,9 @@
     </artifact>
     <artifact classifier='osgi.bundle' id='de.bughome.edt.arch.diagram' version='1.1.0'>
       <properties size='3'>
-        <property name='artifact.size' value='400712'/>
-        <property name='download.size' value='400712'/>
+        <property name='artifact.size' value='400009'/>
+        <property name='download.size' value='400009'/>
         <property name='download.contentType' value='application/zip'/>
-      </properties>
-    </artifact>
-    <artifact classifier='osgi.bundle' id='edt.arch.model.editor' version='1.0.0'>
-      <properties size='3'>
-        <property name='artifact.size' value='59713'/>
-        <property name='download.size' value='59713'/>
-        <property name='download.contentType' value='application/zip'/>
-      </properties>
-    </artifact>
-    <artifact classifier='org.eclipse.update.feature' id='de.bughome.edt.arch.feature' version='1.0.0'>
-      <properties size='2'>
-        <property name='artifact.size' value='935'/>
-        <property name='download.size' value='935'/>
       </properties>
     </artifact>
   </artifacts>

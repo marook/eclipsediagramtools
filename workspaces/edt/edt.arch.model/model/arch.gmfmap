@@ -178,6 +178,9 @@
     </labelMappings>
     <containmentFeature
         href="arch.ecore#//Diagram/edges"/>
+    <tool
+        xsi:type="gmftool:CreationTool"
+        href="arch.gmftool#//@palette/@tools.0/@tools.8"/>
     <diagramLink
         href="arch.gmfgraph#Dependency"/>
     <sourceMetaFeature
@@ -201,7 +204,7 @@
         href="arch.ecore#//Diagram/edges"/>
     <tool
         xsi:type="gmftool:CreationTool"
-        href="arch.gmftool#//@palette/@tools.0/@tools.8"/>
+        href="arch.gmftool#//@palette/@tools.0/@tools.9"/>
     <diagramLink
         href="arch.gmfgraph#Relation"/>
     <sourceMetaFeature

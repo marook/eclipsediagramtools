@@ -560,11 +560,12 @@
             xsi:type="gmfgen:ToolEntry"
             title="Dependency"
             description="Create new Dependency"
-            genLinks="//@diagram/@links.1"/>
+            genLinks="//@diagram/@links.0"/>
         <entries
             xsi:type="gmfgen:ToolEntry"
             title="Relation"
-            description="Create new Relation"/>
+            description="Create new Relation"
+            genLinks="//@diagram/@links.1"/>
       </groups>
     </palette>
     <preferencePages
