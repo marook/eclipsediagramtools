@@ -1,5 +1,5 @@
 #summary Eclipse Diagram Tools Screenshots.
-#labels screenshots,screenshot
+#labels Featured
 
 = Screenshots =
 
